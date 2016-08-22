@@ -1,0 +1,8 @@
+{% import "_macros.html" as macros %}
+
+{% for chapter in chapters %}
+  <h1> {{ chapter.Name }} </h1>
+  <h1> {{ chapter.Episode }} </h1>
+  <h5><a href="{{ url_for('chapter_page', Name=chapter.slug) }}" alt="{{ chapter.Name }}">go to page</a></h5>
+  <hr>
+{% endfor %}

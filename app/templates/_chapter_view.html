@@ -1,0 +1,13 @@
+{% for chapter in chapters %}
+  {% if loop.first %}
+    <h2> {{ chapter.Name }} </h2>
+  {% elif loop.last %}
+    {% if chapter.Episode == 2 %}
+      <a href="{{ url_for('index') }}">back to start</a>
+    {% else %}
+      <h5><a href="{{ url_for('chapter_page', Name=chapter.slug) }}" alt="{{ chapter.Name }}">next</a></h5>
+    {% endif %}
+  {% endif %}
+{% endfor %}
+<br>
+<a href="{{ url_for('index') }}">home</a>
