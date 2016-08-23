@@ -11,3 +11,22 @@ def get_chapters():
         chapter_list.append(chapter)
 
     return chapter_list
+
+
+def get_slugs(Name):
+    all_submissions = get_google_sheet()
+    slugs = [slugify(unicode(i['Name'])) for i in all_submissions]
+
+    links = False
+    next = False
+    prev = False
+    for i in range(len(slugs)):
+        if Name == slugs[i]:
+            if i + 1 < len(slugs):
+                next = slugs[i + 1]
+            if i > 0:
+                prev = slugs[i - 1]
+
+            links = {'next': next, 'prev': prev}
+
+    return slugs, links

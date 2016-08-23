@@ -1,8 +1,7 @@
 from index import app
 from flask import render_template, request
 from config import BASE_URL
-from query import get_chapters
-from collections import deque
+from query import get_chapters, get_slugs
 
 chapters = get_chapters()
 
@@ -21,10 +20,13 @@ def index():
     page_title = 'TIMELINE'
     page_url = BASE_URL + request.path
     landing = True
+    slugs, links = get_slugs(Name=False)
 
     return render_template('content.html',
         page_title=page_title,
         social=social,
+        slugs=slugs,
+        links=links,
         landing=landing,
         chapters=chapters,
         page_url=page_url)
@@ -38,6 +40,8 @@ def chapter_page(Name):
 
     page_url = BASE_URL + request.path
     page_title = 'TIMELINE'
+    slugs, links = get_slugs(Name)
+
 
     social = {
         'title': page_title,
@@ -51,5 +55,7 @@ def chapter_page(Name):
     return render_template('content.html',
     page_title=page_title,
     social=social,
+    slugs=slugs,
+    links=links,
     chapters=chapters,
     page_url=page_url)
