@@ -2,8 +2,9 @@
 from slugify import slugify
 from sheet import get_google_sheet
 
+sheet = get_google_sheet()
+
 def get_chapters():
-    sheet = get_google_sheet()
     chapter_list = []
 
     for i, chapter in enumerate(sheet):
@@ -14,8 +15,7 @@ def get_chapters():
 
 
 def get_slugs(Name):
-    all_submissions = get_google_sheet()
-    slugs = [slugify(unicode(i['Name'])) for i in all_submissions]
+    slugs = [slugify(unicode(i['Name'])) for i in sheet]
 
     links = False
     next = False

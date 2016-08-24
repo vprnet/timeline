@@ -5554,7 +5554,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 
 /* line 19, ../dev/sass/_vpr.scss */
 a {
-  color: black;
+  color: green;
 }
 
 /* line 23, ../dev/sass/_vpr.scss */
@@ -5566,14 +5566,14 @@ html, body {
 #page_container {
   min-height: 96%;
   padding-bottom: 20px;
-  background: #FFFFFF;
+  background: #000000;
 }
 
 /* line 33, ../dev/sass/_vpr.scss */
 .navbar {
   border: 0;
   border-radius: 0;
-  background-color: #3F4444;
+  background-color: #000000;
   min-height: 45px;
 }
 /* line 38, ../dev/sass/_vpr.scss */
@@ -5619,7 +5619,7 @@ html, body {
 
 /* line 72, ../dev/sass/_vpr.scss */
 footer {
-  background: #646c6c;
+  background: #000000;
   font-size: 12px;
   color: #e6e6e6;
   margin-top: -55px;
@@ -9198,7 +9198,7 @@ div.audio_player div.play_btn {
   padding: 10px 20px 8px;
   height: 40px;
   font-size: 24px;
-  color: #585e5e;
+  color: #FFFFFF;
   display: inline-block;
 }
 /* line 16, ../dev/sass/_player.scss */
@@ -9260,6 +9260,7 @@ hr.side {
 /* line 22, ../dev/sass/style.scss */
 h1, h2, h3, h4 {
   font-family: 'Oswald', sans-serif;
+  color: #FFFFFF;
 }
 
 /* line 27, ../dev/sass/style.scss */
@@ -9389,4 +9390,8 @@ h1, h2, h3, h4 {
 /* line 122, ../dev/sass/style.scss */
 .about p {
   font-size: 18px;
+}
+
+#intro {
+  padding-left: 40px;
 }
