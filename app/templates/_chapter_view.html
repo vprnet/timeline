@@ -1,9 +1,10 @@
 {% import "_macros.html" as macros %}
 
-{% for chapter in chapters %}
-  {% if loop.first %}
-    <h2> {{ chapter.Name }} </h2>
-    <h2>{{ macros.player(chapter.Audio, "", "" ) }}</h2>
-
-  {% endif %}
-{% endfor %}
+<div class="chapter_style">
+  {% for chapter in chapters %}
+    {% if loop.first %}
+      <img class="landing-image" src="{{ chapter.Graphic }}" height="180px">
+      <h2>{{ macros.player(chapter.Audio, "", "" ) }}</h2>
+    {% endif %}
+  {% endfor %}
+</div>

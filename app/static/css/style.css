@@ -1442,7 +1442,6 @@ a {
 a:hover,
 a:focus {
   color: #2a6496;
-  text-decoration: underline;
 }
 
 /* line 917, ../dev/sass/_bootstrap.scss */
@@ -9188,14 +9187,11 @@ footer span#copyright {
 /* line 1, ../dev/sass/_player.scss */
 div.audio_player {
   height: 40px;
-  margin-left: 40px;
 }
 /* line 5, ../dev/sass/_player.scss */
 div.audio_player div.play_btn {
-  margin-left: -40px;
   cursor: pointer;
   width: 40px;
-  padding: 10px 20px 8px;
   height: 40px;
   font-size: 24px;
   color: #FFFFFF;
@@ -9394,4 +9390,18 @@ h1, h2, h3, h4 {
 
 #intro {
   padding-left: 40px;
+}
+
+.chevrons {
+  font-size: 80px;
+}
+
+.chapter_style {
+  text-align: center;
+}
+
+.landing-image {
+  display: block;
+  margin: auto;
+  width: 300px;
 }

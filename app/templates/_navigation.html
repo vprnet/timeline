@@ -1,12 +1,12 @@
-<div class="chevrons">
-    <a class="prev" href={% if links.prev %}"{{ url_for('chapter_page', Name=links.prev) }}"
-        {% else %}"{{ url_for('index') }}"{% endif %}>
-        <h2><i class="icon ion-ios7-arrow-left"></i></h2>
-    </a>
-    <a class="next" href="{% if links.next %}{{ url_for('chapter_page', Name=links.next) }}{% endif %}">
-        <h2><i class="icon ion-ios7-arrow-right"></i></h2>
-    </a>
+<div class="chapter_style">
+  <div class="chevrons">
+      <a class="prev" href={% if links.prev %}"{{ url_for('chapter_page', Name=links.prev) }}"
+          {% else %}"{{ url_for('index') }}"{% endif %}>
+          <i class="icon ion-ios7-arrow-left"></i>
+      </a>
+      <a class="next" href="{% if links.next %}{{ url_for('chapter_page', Name=links.next) }}{% endif %}">
+          <i class="icon ion-ios7-arrow-right"></i>
+      </a>
+  </div>
+  <a href="{{ url_for('index') }}">home</a>
 </div>
-
-
-<a href="{{ url_for('index') }}">home</a>

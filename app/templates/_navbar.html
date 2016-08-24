@@ -1,19 +1,17 @@
-<nav class="navbar" role="navigation">
-	<div class="container">
-    <div class="navbar-header">
-
-			<div id="vpr_logo">
-      </div>
-
-      <h1 id="navbar-title"><a href="{{ url_for('index') }}"></a></h1>
-
-      {% if project_social %}
-	      <ul class="list-inline social_logos">
-	          <li><a href="https://www.facebook.com/sharer.php?u={{ project_social.url|urlencode }}" target="_blank"><i class="icon ion-social-facebook"></i></a></li>
-	          <li><a href="http://www.twitter.com/intent/tweet?url={{ page_url|urlencode }}&text={{ project_social.twitter_text|urlencode }}&via=vprnet&hashtags={{ project_social.twitter_hashtag|urlencode }}" target="_blank"><i class="icon ion-social-twitter"></i></a></li>
-	          <li><a href="https://plus.google.com/share?url={{ project_social.url|urlencode }}" target="_blank"><i class="icon ion-social-googleplus"></i></a></li>
-      {% endif %}
-
+{% if landing %}
+	<nav class="navbar" role="navigation">
+		<div class="container">
+	    <div class="navbar-header">
+			</div>
+	  </div>
+	</nav>
+{% else %}
+	<nav class="navbar" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<h1 id="navbar-title"><a href="{{ url_for('index') }}"></a>timeline</h1>
+			</div>
 		</div>
-  </div>
-</nav>
+	</nav>
+
+{% endif %}
