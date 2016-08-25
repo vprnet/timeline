@@ -1,6 +1,11 @@
 {% import "_macros.html" as macros %}
 
 <div id="intro">
-  <h1>timeline, a podcast from vermont public radio</h1>
-  <h4><a href="{{ url_for('chapter_page', Name=slugs[0]) }}">begin</a></h4>
+  <img class="img-responsive" src="./static/img/timeline-intro.gif">
+</div>
+<div id="description">
+  <h1 id="header"></h1>
+  <h5><i>Timeline</i> is an exploration into the development of Western music.</h5>
+  <h5>Plug in your headphones, and take a journey into the events, characters and concepts that shaped Western musical tradition.</h5>
+  <h5><a href="{{ url_for('chapter_page', Name=slugs[0]) }}"><i> - Begin - </i></a></h5>
 </div>

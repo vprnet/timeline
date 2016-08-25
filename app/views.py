@@ -46,7 +46,7 @@ def chapter_page(Name):
     social = {
         'title': page_title,
         'subtitle': "TIMELINE",
-        'img': chapters[0]['Graphic'],
+        'img': "",
         'description': "TIMELINE",
         'twitter_text': chapters[0]['Name'],
         'twitter_hashtag': ""

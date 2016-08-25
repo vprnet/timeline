@@ -74,3 +74,10 @@ var canPlay = function(audio, progressBar, fullWidth, duration, remaining, glyph
         glyphicon.attr('class', 'glyphicon glyphicon-pause');
     }
 };
+
+
+$(':header').addClass('headline');
+$('h5').hide().fadeIn(15500);
+$('h5').on('click', function() {
+  $(this).remove();
+});
