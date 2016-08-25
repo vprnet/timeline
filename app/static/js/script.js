@@ -77,7 +77,13 @@ var canPlay = function(audio, progressBar, fullWidth, duration, remaining, glyph
 
 
 $(':header').addClass('headline');
-$('h5').hide().fadeIn(15500);
+$('h5').hide().fadeIn(13500);
 $('h5').on('click', function() {
+  $(this).remove();
+});
+
+$(':header').addClass('headline');
+$('h4').hide().fadeIn(20500);
+$('h4').on('click', function() {
   $(this).remove();
 });
