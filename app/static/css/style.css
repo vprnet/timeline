@@ -9404,13 +9404,14 @@ h1, h2, h3, h4 {
 }
 
 #description h5 {
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
   text-align: center;
 }
 
 .chapter_style h4 {
   font-family: 'Lato', sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   color: #FFFFFF;
 }
 
