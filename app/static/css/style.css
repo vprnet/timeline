@@ -4593,7 +4593,7 @@ input[type="button"].btn-block {
 /* line 3085, ../dev/sass/_bootstrap.scss */
 .navbar-brand {
   float: left;
-  padding: 15px 15px;
+  padding: 35px 15px;
   font-size: 18px;
   line-height: 20px;
   height: 50px;
@@ -9409,6 +9409,10 @@ h1, h2, h3, h4 {
   text-align: center;
 }
 
+.chapter_style {
+  padding-top: 70px;
+}
+
 .chapter_style h4 {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
@@ -9417,4 +9421,17 @@ h1, h2, h3, h4 {
 
 #chapter_info {
   padding-top: 60px;
+}
+
+#progress_bar_background {
+    position: relative;
+    width: 50%;
+    height: 2px;
+    background-color: #323232;
+    margin: auto;
+}
+#progress_bar_filler {
+    position: absolute;
+    height: 100%;
+    background-color: #5D0B0B;
 }

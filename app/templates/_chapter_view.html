@@ -9,6 +9,10 @@
         <h4>{{ chapter.Name }}</h4>
         <h4>{{ macros.player(chapter.Audio, "", "" ) }}</h4>
       </div>
+
+      <div id="progress_bar_background">
+        <div id="progress_bar_filler" style="width:{{ chapter.Percentage }}%"></div>
+      </div>
     {% endif %}
   {% endfor %}
 </div>
