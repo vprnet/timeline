@@ -9391,8 +9391,16 @@ h1, h2, h3, h4 {
   font-size: 18px;
 }
 
-.chevrons {
-  font-size: 80px;
+#chevron-left {
+  font-size: 40px;
+  position: absolute;
+  left: 10px;
+}
+
+#chevron-right {
+  font-size: 40px;
+  position: absolute;
+  right: 10px;
 }
 
 .chapter_style {
