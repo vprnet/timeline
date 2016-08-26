@@ -5,6 +5,7 @@
     {% if loop.first %}
       <img class="img-responsive" src="{{ chapter.Graphic }}" width="300px">
       <div id="chapter_info">
+        <h4>{{ chapter.Year }}</h4>
         <h4>{{ chapter.Name }}</h4>
         <h4>{{ macros.player(chapter.Audio, "", "" ) }}</h4>
       </div>

@@ -5564,9 +5564,9 @@ html, body {
 
 /* line 27, ../dev/sass/_vpr.scss */
 #page_container {
-  min-height: 98%;
-  padding-bottom: 20px;
+  min-height: 100%;
   background: #000000;
+  padding-bottom: 20px;
 }
 
 /* line 33, ../dev/sass/_vpr.scss */
@@ -5623,18 +5623,8 @@ footer {
   font-size: 12px;
   color: #e6e6e6;
   margin-top: -55px;
-  padding: 20px 0 12px;
 }
-@media (max-width: 768px) {
-  /* line 72, ../dev/sass/_vpr.scss */
-  footer {
-    padding-bottom: 20px;
-  }
-}
-/* line 83, ../dev/sass/_vpr.scss */
-footer span#copyright {
-  float: right;
-}
+
 
 /* line 89, ../dev/sass/_vpr.scss */
 
@@ -9419,7 +9409,8 @@ h1, h2, h3, h4 {
 }
 
 .chapter_style h4 {
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
   color: #FFFFFF;
 }
 
