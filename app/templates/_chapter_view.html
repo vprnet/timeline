@@ -4,8 +4,10 @@
   {% for chapter in chapters %}
     {% if loop.first %}
       <img class="img-responsive" src="{{ chapter.Graphic }}" width="300px">
-      <h4>{{ chapter.Name }}</h4>
-      <h4>{{ macros.player(chapter.Audio, "", "" ) }}</h4>
+      <div id="chapter_info">
+        <h4>{{ chapter.Name }}</h4>
+        <h4>{{ macros.player(chapter.Audio, "", "" ) }}</h4>
+      </div>
     {% endif %}
   {% endfor %}
 </div>
