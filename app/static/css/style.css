@@ -9219,18 +9219,13 @@ div.audio_player .play {
 }
 /* line 26, ../dev/sass/_player.scss */
 div.audio_player .duration, div.audio_player .audio_title {
+  font-family: 'Lato', sans-serif;
   position: absolute;
   top: 2px;
-  color: #3f4444;
-  font-weight: 500;
+  color: #FFFFFF;
   height: 20px;
-  padding: 15px 30px 8px;
-  font-size: 10px;
-}
-
-/* line 39, ../dev/sass/_player.scss */
-div.audio_player .audio_title {
-  left: 20px;
+  padding: 0px 18px;
+  font-size: 20px;
 }
 
 @media (max-width: 768px) {
@@ -9264,7 +9259,6 @@ hr.side {
 
 /* line 22, ../dev/sass/style.scss */
 h1, h2, h3, h4 {
-  font-family: 'Oswald', sans-serif;
   color: #FFFFFF;
 }
 
@@ -9416,6 +9410,7 @@ h1, h2, h3, h4 {
   text-align: center;
 }
 
-.chapter_style h2 {
+.chapter_style h4 {
   font-family: 'Fira Sans', sans-serif;
+  color: #FFFFFF;
 }
