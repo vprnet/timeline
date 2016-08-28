@@ -71,3 +71,14 @@ def menu():
         social=social,
         chapters=chapters,
         page_url=page_url)
+
+
+@app.route('/about')
+def about():
+    page_title = 'Timeline'
+    page_url = BASE_URL + request.path
+
+    return render_template('about.html',
+        page_title=page_title,
+        social=social,
+        page_url=page_url)
