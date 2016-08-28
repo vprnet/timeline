@@ -9240,11 +9240,8 @@ div.audio_player .duration, div.audio_player .audio_title {
 
 /* line 18, ../dev/sass/style.scss */
 hr {
-  border-top: 4px solid #585e5e;
-}
-
-hr.side {
-  border-top: 1px solid #585e5e;
+  border-top: 1px solid #323232;
+  width: 70%;
 }
 
 /* line 22, ../dev/sass/style.scss */
@@ -9424,14 +9421,27 @@ h1, h2, h3, h4 {
 }
 
 #progress_bar_background {
-    position: relative;
-    width: 50%;
-    height: 2px;
-    background-color: #323232;
-    margin: auto;
+  position: relative;
+  width: 50%;
+  height: 2px;
+  background-color: #323232;
+  margin: auto;
 }
+
 #progress_bar_filler {
-    position: absolute;
-    height: 100%;
-    background-color: #5D0B0B;
+  position: absolute;
+  height: 100%;
+  background-color: #5D0B0B;
+}
+
+#menu h3 {
+  text-align: center;
+  font-size: 20px;
+  padding-bottom: 8px;
+}
+
+#menu h4 {
+  text-align: center;
+  font-size: 14px;
+  padding: 4px;
 }

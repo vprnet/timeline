@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block title %}{{ page_title }} | VPR{% endblock %}
+
+{% block menu %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div id="menu">
+      <h3>About This Project</h3>
+      <hr>
+      <h3>Ancient Music</h3>
+      {% for chapter in chapters %}
+        {% if chapter.Era == "Ancient Music" %}
+            <h4><a href="{{ url_for('chapter_page', Name=chapter.slug) }}">{{ chapter.Name}}</a></h4>
+        {% endif %}
+      {% endfor %}
+      <hr>
+      <h3>Middle Ages</h3>
+      {% for chapter in chapters %}
+        {% if chapter.Era == "Middle Ages" %}
+            <h4><a href="{{ url_for('chapter_page', Name=chapter.slug) }}">{{ chapter.Name}}</a></h4>
+        {% endif %}
+      {% endfor %}
+      <hr>
+      <h3>Renaissance</h3>
+      {% for chapter in chapters %}
+        {% if chapter.Era == "Renaissance" %}
+            <h4><a href="{{ url_for('chapter_page', Name=chapter.slug) }}">{{ chapter.Name}}</a></h4>
+        {% endif %}
+      {% endfor %}
+      <hr>
+      <h3>Baroque</h3>
+      {% for chapter in chapters %}
+        {% if chapter.Era == "Baroque" %}
+            <h4><a href="{{ url_for('chapter_page', Name=chapter.slug) }}">{{ chapter.Name}}</a></h4>
+        {% endif %}
+      {% endfor %}
+      <hr>
+      <h3>Rococo</h3>
+      {% for chapter in chapters %}
+        {% if chapter.Era == "Rococo" %}
+            <h4><a href="{{ url_for('chapter_page', Name=chapter.slug) }}">{{ chapter.Name}}</a></h4>
+        {% endif %}
+      {% endfor %}
+      <hr>
+      <h3>Classical</h3>
+      {% for chapter in chapters %}
+        {% if chapter.Era == "Classical" %}
+            <h4><a href="{{ url_for('chapter_page', Name=chapter.slug) }}">{{ chapter.Name}}</a></h4>
+        {% endif %}
+      {% endfor %}
+      <hr>
+      <h3>Romantic</h3>
+      {% for chapter in chapters %}
+        {% if chapter.Era == "Romantic" %}
+            <h4><a href="{{ url_for('chapter_page', Name=chapter.slug) }}">{{ chapter.Name}}</a></h4>
+        {% endif %}
+      {% endfor %}
+      <hr>
+      <h3>20th Century</h3>
+      <h4><i>- Coming Soon -</i></h4>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
