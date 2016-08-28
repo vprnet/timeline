@@ -17,7 +17,7 @@ social = {
 
 @app.route('/')
 def index():
-    page_title = 'TIMELINE'
+    page_title = 'Timeline'
     page_url = BASE_URL + request.path
     landing = True
     slugs, links = get_slugs(Name=False)
@@ -39,15 +39,15 @@ def chapter_page(Name):
             chapters.insert(0, chapter)
 
     page_url = BASE_URL + request.path
-    page_title = 'TIMELINE'
+    page_title = 'Timeline'
     slugs, links = get_slugs(Name)
 
 
     social = {
         'title': page_title,
-        'subtitle': "TIMELINE",
+        'subtitle': "",
         'img': "",
-        'description': "TIMELINE",
+        'description': "",
         'twitter_text': chapters[0]['Name'],
         'twitter_hashtag': ""
     }
@@ -63,7 +63,7 @@ def chapter_page(Name):
 
 @app.route('/menu')
 def menu():
-    page_title = 'TIMELINE'
+    page_title = 'Timeline'
     page_url = BASE_URL + request.path
 
     return render_template('menu.html',
