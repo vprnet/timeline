@@ -17,7 +17,7 @@ social = {
 
 @app.route('/')
 def index():
-    page_title = 'Timeline'
+    page_title = 'VPR Classical Timeline'
     page_url = BASE_URL + request.path
     landing = True
     slugs, links = get_slugs(Name=False)
@@ -64,7 +64,7 @@ def chapter_page(Name):
 
 @app.route('/menu')
 def menu():
-    page_title = 'Timeline'
+    page_title = 'VPR Classical Timeline'
     page_url = BASE_URL + request.path
     menu = True
 
@@ -78,7 +78,7 @@ def menu():
 
 @app.route('/about')
 def about():
-    page_title = 'Timeline'
+    page_title = 'VPR Classical Timeline'
     page_url = BASE_URL + request.path
     about = True
 
