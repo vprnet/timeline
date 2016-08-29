@@ -5618,6 +5618,24 @@ html, body {
   right: 0;
   font-weight: 300;
 }
+
+
+/* line 72, ../dev/sass/_vpr.scss */
+footer {
+  background: #000000;
+  font-size: 12px;
+  color: #e6e6e6;
+  margin-top: -107px;
+  padding: 20px 0 1px;
+}
+@media (max-width: 768px) {
+  /* line 72, ../dev/sass/_vpr.scss */
+  footer {
+    padding-bottom: 5px;
+  }
+}
+
+
 /* line 64, ../dev/sass/_vpr.scss */
 .navbar .navbar-header .social_logos li {
   font-size: 30px;
