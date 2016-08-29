@@ -39,7 +39,8 @@ def chapter_page(Name):
             chapters.insert(0, chapter)
 
     page_url = BASE_URL + request.path
-    page_title = 'Timeline'
+    page_title =  "VPR Classical Timeline - " + chapters[0]['Name']
+
     slugs, links = get_slugs(Name)
 
 
