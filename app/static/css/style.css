@@ -9428,8 +9428,8 @@ h1, h2, h3, h4 {
 
 #progress_bar_background {
   position: relative;
-  width: 50%;
-  height: 2px;
+  width: 90px;
+  height: 1px;
   background-color: #323232;
   margin: auto;
 }

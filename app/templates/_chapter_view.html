@@ -4,13 +4,13 @@
   {% for chapter in chapters %}
     {% if loop.first %}
       <img class="img-responsive" src="{{ chapter.Graphic }}" width="300px">
+      <div id="progress_bar_background">
+        <div id="progress_bar_filler" style="width:{{chapter.Percentage}}%;background-color:{{chapter.Color}};"></div>
+      </div>
       <div id="chapter_info">
         <h4>{{ chapter.Year }}</h4>
         <h4>{{ chapter.Name }}</h4>
         <h4>{{ macros.player(chapter.Audio, "", "" ) }}</h4>
-      </div>
-      <div id="progress_bar_background">
-        <div id="progress_bar_filler" style="width:{{chapter.Percentage}}%;background-color:{{chapter.Color}};"></div>
       </div>
     {% endif %}
   {% endfor %}
