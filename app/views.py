@@ -7,8 +7,8 @@ chapters = get_chapters()
 
 social = {
     'url': BASE_URL,
-    'title': "test",
-    'subtitle': "",
+    'title': "Timeline",
+    'subtitle': "A Podcast from Vermont Public Radio",
     'img': "",
     'description': "",
     'twitter_text': "",
@@ -47,8 +47,8 @@ def chapter_page(Name):
         'title': page_title,
         'subtitle': "",
         'img': "",
-        'description': "",
-        'twitter_text': chapters[0]['Name'],
+        'description': chapters[0]['Name'],
+        'twitter_text': "",
         'twitter_hashtag': ""
     }
 
