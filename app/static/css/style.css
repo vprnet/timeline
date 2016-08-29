@@ -9378,16 +9378,16 @@ h1, h2, h3, h4 {
 }
 
 #chevron-left {
-  font-size: 40px;
+  font-size: 50px;
   position: absolute;
-  left: 2px;
+  left: -15px;
   bottom: 8px;
 }
 
 #chevron-right {
-  font-size: 40px;
+  font-size: 50px;
   position: absolute;
-  right: 2px;
+  right: -15px;
   bottom: 8px;
 }
 
@@ -9405,6 +9405,11 @@ h1, h2, h3, h4 {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   text-align: center;
+}
+
+#description span {
+  font-size: 16px;
+  font-style: italic;
 }
 
 .chapter_style {
