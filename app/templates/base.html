@@ -45,7 +45,7 @@
 {% block footer %}
 <footer>
     <div class="container">
-        {% if landing or menu %}
+        {% if landing or menu or about%}
           <a class="menu-brand" href="{{ url_for('index') }}"></a></h1>
         {% else %}
           <a class="menu-brand" href="{{ url_for('menu') }}">CHAPTERS</a></h1>

@@ -79,8 +79,10 @@ def menu():
 def about():
     page_title = 'Timeline'
     page_url = BASE_URL + request.path
+    about = True
 
     return render_template('about.html',
         page_title=page_title,
         social=social,
+        about=about,
         page_url=page_url)
