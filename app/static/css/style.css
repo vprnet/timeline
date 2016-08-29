@@ -9363,12 +9363,14 @@ h1, h2, h3, h4 {
   font-size: 40px;
   position: absolute;
   left: 2px;
+  bottom: 8px;
 }
 
 #chevron-right {
   font-size: 40px;
   position: absolute;
   right: 2px;
+  bottom: 8px;
 }
 
 .chapter_style {
