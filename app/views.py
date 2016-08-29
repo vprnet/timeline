@@ -53,22 +53,24 @@ def chapter_page(Name):
     }
 
     return render_template('content.html',
-    page_title=page_title,
-    social=social,
-    slugs=slugs,
-    links=links,
-    chapters=chapters,
-    page_url=page_url)
+        page_title=page_title,
+        social=social,
+        slugs=slugs,
+        links=links,
+        chapters=chapters,
+        page_url=page_url)
 
 
 @app.route('/menu')
 def menu():
     page_title = 'Timeline'
     page_url = BASE_URL + request.path
+    menu = True
 
     return render_template('menu.html',
         page_title=page_title,
         social=social,
+        menu=menu,
         chapters=chapters,
         page_url=page_url)
 
