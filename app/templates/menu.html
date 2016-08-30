@@ -11,7 +11,7 @@
         <h3><a href="{{ url_for('about') }}">About This Project</a></h3>
         <hr>
         <h3>Ancient Music</h3>
-        <p>1400 BCE - 1033 AD</p>
+        <p>1400 BCE - 1000 AD</p>
         {% for chapter in chapters %}
           {% if chapter.Era == "Ancient Music" %}
               <h4><a href="{{ url_for('chapter_page', Name=chapter.slug) }}">{{ chapter.Name}}</a></h4>
@@ -19,7 +19,7 @@
         {% endfor %}
         <hr>
         <h3>Middle Ages</h3>
-        <p>1000 - 1377</p>
+        <p>1000 - 1400</p>
         {% for chapter in chapters %}
           {% if chapter.Era == "Middle Ages" %}
               <h4><a href="{{ url_for('chapter_page', Name=chapter.slug) }}">{{ chapter.Name}}</a></h4>
@@ -27,7 +27,7 @@
         {% endfor %}
         <hr>
         <h3>Renaissance</h3>
-        <p>1397 - 1583</p>
+        <p>1400 - 1600</p>
         {% for chapter in chapters %}
           {% if chapter.Era == "Renaissance" %}
               <h4><a href="{{ url_for('chapter_page', Name=chapter.slug) }}">{{ chapter.Name}}</a></h4>
@@ -35,7 +35,7 @@
         {% endfor %}
         <hr>
         <h3>Baroque</h3>
-        <p>1567 - 1722</p>
+        <p>1600 - 1750</p>
         {% for chapter in chapters %}
           {% if chapter.Era == "Baroque" %}
               <h4><a href="{{ url_for('chapter_page', Name=chapter.slug) }}">{{ chapter.Name}}</a></h4>
@@ -43,7 +43,7 @@
         {% endfor %}
         <hr>
         <h3>Rococo</h3>
-        <p>1750 - 1787</p>
+        <p>1750 - 1775</p>
         {% for chapter in chapters %}
           {% if chapter.Era == "Rococo" %}
               <h4><a href="{{ url_for('chapter_page', Name=chapter.slug) }}">{{ chapter.Name}}</a></h4>
@@ -51,7 +51,7 @@
         {% endfor %}
         <hr>
         <h3>Classical</h3>
-        <p>1732 - 1803</p>
+        <p>1775 - 1815</p>
         {% for chapter in chapters %}
           {% if chapter.Era == "Classical" %}
               <h4><a href="{{ url_for('chapter_page', Name=chapter.slug) }}">{{ chapter.Name}}</a></h4>
@@ -59,7 +59,7 @@
         {% endfor %}
         <hr>
         <h3>Romantic</h3>
-        <p>1800 - 1949</p>
+        <p>1815 - 1900</p>
         {% for chapter in chapters %}
           {% if chapter.Era == "Romantic" %}
               <h4><a href="{{ url_for('chapter_page', Name=chapter.slug) }}">{{ chapter.Name}}</a></h4>
@@ -67,7 +67,7 @@
         {% endfor %}
         <hr>
         <h3>20th Century</h3>
-        <p>1900 - 2016</p>
+        <p>1900 - Present</p>
         <h4><i>- Coming Soon -</i></h4>
       </div>
     </div>
