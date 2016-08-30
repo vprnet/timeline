@@ -5,7 +5,8 @@
       </a>
   </div>
   <div id="chevron-right">
-      <a class="next" href="{% if links.next %}{{ url_for('chapter_page', Name=links.next) }}{% endif %}">
+      <a class="next" href={% if links.next %}"{{ url_for('chapter_page', Name=links.next) }}"
+          {% else %}"{{ url_for('about') }}"{% endif %}>
           <i class="icon ion-ios7-arrow-right"></i>
       </a>
   </div>
