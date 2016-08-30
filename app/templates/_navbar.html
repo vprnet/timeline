@@ -5,11 +5,20 @@
 			</div>
 	  </div>
 	</nav>
-{% else %}
+{% elif menu %}
 	<nav class="navbar" role="navigation">
 		<div class="container">
 			<div class="navbar-header">
 				<a class="navbar-brand" href="{{ url_for('index') }}"><div id="vpr_timeline"></div></a>
+			</div>
+		</div>
+	</nav>
+{% else %}
+	<nav class="navbar" role="navigation">
+			<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="{{ url_for('index') }}"><div id="vpr_timeline"></div></a>
+				<a class="menu-brand" href="{{ url_for('menu') }}"><div id="hamburger"></div></a>
 			</div>
 		</div>
 	</nav>
