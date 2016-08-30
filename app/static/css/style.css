@@ -9244,7 +9244,14 @@ div.audio_player .duration, div.audio_player .audio_title {
 /* line 18, ../dev/sass/style.scss */
 hr {
   border-top: 1px solid #323232;
-  width: 70%;
+  width: 60%;
+}
+
+@media (min-width: 760px) {
+  hr {
+    border-top: 1px solid #323232;
+    width: 40%;
+  }
 }
 
 /* line 22, ../dev/sass/style.scss */
