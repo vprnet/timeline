@@ -2069,20 +2069,6 @@ address {
   min-height: 1px;
 }
 
-.col-sm-3.box {
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 25px;
-  margin: 4px;
-  border: 1px solid transparent;
-  height: 100%;
-  overflow: hidden;
-}
-
-.col-sm-3.box:hover {
-  border-color: black;
-}
-
 /* line 1369, ../dev/sass/_bootstrap.scss */
 .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
   float: left;
@@ -9202,6 +9188,7 @@ footer {
 /* line 1, ../dev/sass/_player.scss */
 div.audio_player {
   height: 40px;
+  padding-top: 18px;
 }
 /* line 5, ../dev/sass/_player.scss */
 div.audio_player div.play_btn {
@@ -9381,14 +9368,14 @@ h1, h2, h3, h4 {
   font-size: 45px;
   position: absolute;
   left: -5px;
-  bottom: 4px;
+  bottom: -24px;
 }
 
 #chevron-right {
   font-size: 45px;
   position: absolute;
   right: -5px;
-  bottom: 4px;
+  bottom: -24px;
 }
 
 .chapter_style {
@@ -9416,14 +9403,19 @@ h1, h2, h3, h4 {
   padding-top: 50px;
 }
 
-.chapter_style h4 {
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  color: #FFFFFF;
+.chapter_style h6 {
+  font-size: 16px;
+}
+
+@media (max-width: 800px) {
+  .chapter_style h6 {
+    font-size: 13px;
+  }
 }
 
 #chapter_info {
   padding-top: 60px;
+  height: 120px;
 }
 
 #progress_bar_background {
