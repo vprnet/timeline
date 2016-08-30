@@ -9375,14 +9375,14 @@ h1, h2, h3, h4 {
   font-size: 45px;
   position: absolute;
   left: -5px;
-  bottom: -24px;
+  bottom: -4px;
 }
 
 #chevron-right {
   font-size: 45px;
   position: absolute;
   right: -5px;
-  bottom: -24px;
+  bottom: -4px;
 }
 
 .chapter_style {
@@ -9423,6 +9423,15 @@ h1, h2, h3, h4 {
 #chapter_info {
   padding-top: 60px;
   height: 120px;
+}
+
+#audio_info {
+  padding-top: 20px;
+}
+
+#audio_info h6 {
+  padding-top: 2px;
+  font-size: 12px;
 }
 
 #progress_bar_background {

@@ -11,8 +11,9 @@
         <h4>{{ chapter.Year }}</h4>
         <h6>{{ chapter.Name }}</h6>
       </div>
-      <div id="chapter_infos">
+      <div id="audio_info">
         <h4>{{ macros.player(chapter.Audio, "", "" ) }}</h4>
+        <h6>{{ chapter.Length }}</h6>
       </div>
     {% endif %}
   {% endfor %}
