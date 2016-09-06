@@ -10,7 +10,7 @@ social = {
     'title': "VPR Classical: Timeline",
     'subtitle': "A Podcast from Vermont Public Radio",
     'img': "http://mediad.publicbroadcasting.net/p/vpr/files/Timeline-shareable-image-20160829.png",
-    'description': "",
+    'description': "VPR Classical: Timeline",
     'twitter_text': "",
     'twitter_hashtag': ""
 }
@@ -21,6 +21,7 @@ def index():
     page_url = BASE_URL + request.path
     landing = True
     slugs, links = get_slugs(Name=False)
+    social = social
 
     return render_template('content.html',
         page_title=page_title,
