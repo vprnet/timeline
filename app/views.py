@@ -5,13 +5,13 @@ from query import get_chapters, get_slugs
 
 chapters = get_chapters()
 
-social = {
+project_social = {
     'url': BASE_URL,
     'title': "VPR Classical: Timeline",
     'subtitle': "A Podcast from Vermont Public Radio",
     'img': "http://mediad.publicbroadcasting.net/p/vpr/files/Timeline-shareable-image-20160829.png",
-    'description': "VPR Classical: Timeline",
-    'twitter_text': "",
+    'description': "An exploration into the development of Western music.",
+    'twitter_text': "From VPR Classical",
     'twitter_hashtag': ""
 }
 
@@ -21,7 +21,8 @@ def index():
     page_url = BASE_URL + request.path
     landing = True
     slugs, links = get_slugs(Name=False)
-    social = social
+
+    social = project_social
 
     return render_template('content.html',
         page_title=page_title,
@@ -29,6 +30,7 @@ def index():
         slugs=slugs,
         links=links,
         landing=landing,
+        project_social=project_social,
         chapters=chapters,
         page_url=page_url)
 
@@ -43,7 +45,6 @@ def chapter_page(Name):
     page_title =  "VPR Classical Timeline: " + chapters[0]['Name']
 
     slugs, links = get_slugs(Name)
-
 
     social = {
         'title': page_title,
@@ -68,6 +69,7 @@ def menu():
     page_title = 'VPR Classical Timeline'
     page_url = BASE_URL + request.path
     menu = True
+    social = project_social
 
     return render_template('menu.html',
         page_title=page_title,
@@ -82,6 +84,7 @@ def about():
     page_title = 'VPR Classical Timeline'
     page_url = BASE_URL + request.path
     about = True
+    social = project_social
 
     return render_template('about.html',
         page_title=page_title,
