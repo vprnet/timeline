@@ -9,7 +9,7 @@ social = {
     'url': BASE_URL,
     'title': "VPR Classical: Timeline",
     'subtitle': "A Podcast from Vermont Public Radio",
-    'img': "http://mediad.publicbroadcasting.net/p/vpr/files/201608/Timeline-shareable-image-20160829.png",
+    'img': "http://mediad.publicbroadcasting.net/p/vpr/files/Timeline-shareable-image-20160829.png",
     'description': "",
     'twitter_text': "",
     'twitter_hashtag': ""
@@ -47,7 +47,7 @@ def chapter_page(Name):
     social = {
         'title': page_title,
         'subtitle': "",
-        'img': "http://mediad.publicbroadcasting.net/p/vpr/files/201608/Timeline-shareable-image-20160829.png",
+        'img': "http://mediad.publicbroadcasting.net/p/vpr/files/Timeline-shareable-image-20160829.png",
         'description': chapters[0]['Name'],
         'twitter_text': "",
         'twitter_hashtag': ""
