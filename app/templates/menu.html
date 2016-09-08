@@ -68,7 +68,13 @@
         <hr style="border-top: 1px solid #211C54">
         <h3>20th Century</h3>
         <p>1900 - Present</p>
-        <h4><a href="{{ url_for('about') }}"><i>- Coming Soon -</i></a></h4>
+        {% for chapter in chapters %}
+          {% if chapter.Era == "20th Century" %}
+              <h4><a href="{{ url_for('chapter_page', Name=chapter.slug) }}">{{ chapter.Name}}</a></h4>
+          {% endif %}
+        {% endfor %}
+        <br>
+        <h4><a href="{{ url_for('about') }}"><i>- More Episodes Coming Soon -</i></a></h4>
       </div>
     </div>
   </div>
