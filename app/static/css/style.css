@@ -5667,23 +5667,6 @@ footer {
   text-align: right;
 }
 
-
-#hamburger {
-  background-size: 100%;
-  width: 120px;
-  height: 30px;
-  background-repeat: no-repeat;
-  background-image: url(http://mediad.publicbroadcasting.net/p/vpr/files/Hamburger-logo-v4-20160829.png)
-}
-
-#vpr_timeline {
-  background-size: 100%;
-  width: 120px;
-  height: 30px;
-  background-repeat: no-repeat;
-  background-image: url(http://mediad.publicbroadcasting.net/p/vpr/files/201608/Timeline-logo-v4-20160829.png)
-}
-
 /*!
   Ionicons, v1.4.0
   Created by Ben Sperry for the Ionic Framework, http://ionicons.com/
