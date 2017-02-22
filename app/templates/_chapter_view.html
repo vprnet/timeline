@@ -3,7 +3,7 @@
 <div class="chapter_style">
   {% for chapter in chapters %}
     {% if loop.first %}
-      <img class="img-responsive" src="{{ chapter.Graphic }}" width="300px">
+      <img class="img-responsive" src="{{ chapter.Graphic }}" width="300px" alt="Chapter Era">
       <div id="progress_bar_background">
         <div id="progress_bar_filler" style="width:{{chapter.Percentage}}%;background-color:{{chapter.Color}};"></div>
       </div>
