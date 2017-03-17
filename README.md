@@ -1,9 +1,9 @@
-#Timeline, from VPR Classical
+# Timeline, from VPR Classical
 
 This is iteration one of Timeline, a digital home for the VPR Classical podcast.
 
 
-##Notes on the Project
+## Notes on the Project
 
 This project started with VPR's [Podcast Directory](http://www.vpr.net/apps/podcast-directory/), which was built from the VPR app template. Vermonters love to recycle.
 
@@ -20,7 +20,7 @@ The steps to get set up are here:
 1. To run locally, just hit a quick	`python app/index.py` and head to `127.0.0.1:5000`, but know that it will all be broken until you follow the Google Spreadsheet steps below.
 
 
-##Notes on Interacting with Google Spreadsheets
+## Notes on Interacting with Google Spreadsheets
 
 The project is hooked up to a Google Spreadsheet that VPR producers and editors control. If you're interested in cloning this project, you'll need your own Google Spreadsheet to get started.
 
